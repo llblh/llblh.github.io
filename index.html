@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>llblh</title>
-    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
-    <script src="https://llblh.com/vue-tencent-captcha.umd.min.js"></script>
+    <!-- <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script> -->
+    <script src="./vue-tencent-captcha.min.js"></script>
   </head>
   <body>
     <h1>Hello World</h1>
-    <vueTencentCaptcha appid="2028109764" callback="captchaCallback">
+    <vue-tencent-captcha appid="2028109764" callback="captchaCallback">
       <button class="btn">点击弹出腾讯人机验证</button>
-    </vueTencentCaptcha>
+    </vue-tencent-captcha>
     <script>
       function captchaCallback(res) {
         console.log(res)
